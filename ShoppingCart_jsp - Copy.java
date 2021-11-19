@@ -45,8 +45,8 @@ public class ShoppingCart_jsp extends HttpJspBase {
     for(int x=1;x<row;x++) rs.next();
   }
 
-  java.sql.ResultSet openrs(java.sql.Statement stat, String sql) throws java.sql.SQLException {
-    java.sql.ResultSet rs = stat.executeQuery(sql);
+  java.sql.ResultSet openrs(java.sql.PreparedStatement stat) throws java.sql.SQLException {
+    java.sql.ResultSet rs = stat.executeQuery();
     return (rs);
   }
 
