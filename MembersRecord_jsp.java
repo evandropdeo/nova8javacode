@@ -469,8 +469,8 @@ static final String sFileName = "MembersRecord.jsp";
       }
 
 
-      String fldmember_login="";
-      String fldmember_password="";
+      GuardedString fldmember_login="";
+      GuardedString fldmember_password="";
       String fldmember_level="";
       String fldname="";
       String fldlast_name="";
